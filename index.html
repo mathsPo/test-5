@@ -13,7 +13,10 @@
     <a-scene>
     <a-box gltf-model="./assets/Doggy.glb" rotation="0 180 0" scale="0.15 0.15 0.15" 
     gps-entity-place="longitude: 49.249549; longitude: 4.021281;" position="0 30 0" animation-mixer/>
-      
+    <model-viewer 
+      src="assets/Doggy.glb" ar ar-placement="floor" ar-modes="webxr scene-viewer quick-look" 
+      camera-controls alt="A 3D model of some wall art" autoplay>
+    </model-viewer>
       <a-camera gps-camera> </a-camera>
     </a-scene>
   </body>
