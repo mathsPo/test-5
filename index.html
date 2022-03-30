@@ -11,11 +11,10 @@
 
   <body>
     <a-scene>
-    <model-viewer 
-      src="./assets/Doggy.glb" ar ar-placement="floor" ar-modes="webxr scene-viewer quick-look" 
-      camera-controls alt="A 3D model of some wall art" autoplay>
-    </model-viewer>
-      <a-camera gps-camera> </a-camera>
+      <a-box src="./assets/antilope.glb" 
+      gps-entity-place="latitude: 49.249681; longitude: 4.021794;"
+      position="0 10 0" />
+      <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
   </body>
 </html>
