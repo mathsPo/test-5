@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="A-Frame simple example." />
+  <meta name="keywords" content="Virtual Reality, A-Frame" />
+  <meta name="author" content="Olivier Nocent" />
+  <title>Get started with A-Frame</title>
+  <!-- A-Frame JavaScript library -->
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <!-- Fichier de géométrie : maillage triangulaire -->
+      <a-asset-item id="burger-obj" src="Hamburger.obj"></a-asset-item>
+      <!-- Fichier de matériau : couleur, textures -->
+      <a-asset-item id="burger-mtl" src="Hamburger.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-obj-model src="#burger-obj" mtl="#burger-mtl" position="-0.8 0 0" scale="0.15 0.15 0.15">
+    </a-obj-model>
+
+    <a-sky color="#ECECEC"></a-sky>
+
+    <a-camera position="0 0.8 2"></a-camera>
+  </a-scene>
+</body>
+
+</html>
