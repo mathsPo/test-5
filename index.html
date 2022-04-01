@@ -36,9 +36,8 @@
         <a-asset-item id="flan" src="models/Flan_glTF/Flan.gltf"></a-asset-item>
         <a-asset-item id="heart" src="./assets/beating-heart.glb"></a-asset-item>
         <a-asset-item id="antilope" src="./assets/antilope.glb"></a-asset-item>
-        
 
-          <a-box material="color: yellow" gps-entity-place="latitude: 49.249774; longitude: 4.021385" position="0 2 0"/>
+          <a-entity gltf-model="./assets/antilope.glb" rotation="0 180 0" gps-entity-place="latitude: 49.249774; longitude: 4.021385;" animation-mixer/>
 
           <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
