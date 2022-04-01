@@ -15,7 +15,12 @@
 </head>
 
 <body>
-    <a-scene>
+    <a-scene vr-mode-ui="enabled: false" embedded
+      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        
+        <a-camera gps-camera rotation-reader></a-camera>
+	</a-scene>
+</body>
 
         <!-- <a-entity gltf-model="./assets/antilope.glb" 
         gps-projected-entity-place="longitude: 49.249717; latitude: 4.021402;" 
@@ -31,16 +36,10 @@
         <a-asset-item id="flan" src="models/Flan_glTF/Flan.gltf"></a-asset-item>
         <a-asset-item id="heart" src="./assets/beating-heart.glb"></a-asset-item>
         <a-asset-item id="antilope" src="./assets/antilope.glb"></a-asset-item>
-
-          <a-cylinder position="3 0 -10" radius="0.5" height="2" color="#B2AA9F">
-          </a-cylinder>
-
-          <a-cylinder position="0 3 -10" radius="0.5" height="2" color="#B2AA9F">
-          </a-cylinder>
         
 
           <a-box material="color: yellow" gps-entity-place="latitude: 49.249774; longitude: 4.021385" position="0 2 0"/>
 
-          <a-camera gps-projected-camera rotation-reader></a-camera>
+          <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
