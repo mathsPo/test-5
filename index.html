@@ -19,13 +19,11 @@
       arjs='sourceType: webcam; debugUIEnabled: false;'>
         
       <a-text
-      value="This content will always face you."
       look-at="[gps-camera]"
-      scale="120 120 120"
-      gps-entity-place="latitude: 49.249774; longitude: 4.021385;"
-    ></a-text>
+    >
+    This content will always face you.</a-text>
 
-    <a-gltf-model src="./assets/antilope.glb" gps-entity-place="latitude: 49.249774; longitude: 4.021385;" animation-mixer="clip: *"></a-gltf-model>
+    <a-gltf-model look-at="[gps-camera]" src="./assets/antilope.glb" gps-entity-place="latitude: 49.249774; longitude: 4.021385;" animation-mixer="clip: *"></a-gltf-model>
 
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
