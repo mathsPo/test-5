@@ -16,26 +16,19 @@
 
 <body>
     <a-scene vr-mode-ui="enabled: false" embedded
-      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+      arjs='sourceType: webcam; debugUIEnabled: false;'>
         
+      <a-text
+      value="This content will always face you."
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: <add-your-latitude>; longitude: <add-your-longitude>;"
+    ></a-text>
+
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
-
-        <!-- <a-entity gltf-model="./assets/antilope.glb" 
-        gps-projected-entity-place="longitude: 49.249717; latitude: 4.021402;" 
-        animation-mixer/> 
-
-        <a-gltf-model src="./assets/antilope.glb" position="0 -0.12 -0.25" animation-mixer="clip: *">
-        </a-gltf-model>
-        
-        <a-camera gps-projected-camera rotation-reader></a-camera> -->
     
-        <a-asset-item id="burger-obj" src="models/Hamburger-OBJ/Hamburger.obj"></a-asset-item>
-        <a-asset-item id="burger-mtl" src="models/Hamburger-OBJ/Hamburger.mtl"></a-asset-item>
-        <a-asset-item id="flan" src="models/Flan_glTF/Flan.gltf"></a-asset-item>
-        <a-asset-item id="heart" src="./assets/beating-heart.glb"></a-asset-item>
-        <a-asset-item id="antilope" src="./assets/antilope.glb"></a-asset-item>
 
           <a-gltf-model src="./assets/antilope.glb" gps-entity-place="latitude: 49.249774; longitude: 4.021385;" animation-mixer="clip: *"></a-gltf-model>     
 
